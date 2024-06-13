@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Agencia - Sobre Nosotros</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="shortcut icon" href="./img/logos/LA-icon.png" type="image/x-icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  
+  <header class="header">
+    <video onload autoplay loop muted class="header-video">
+      <source src="./img/video-background-cont.mp4" >
+    </video>
+    <div class="header-top">
+      <div class="header-logo">
+        <h3>LA AGENCIA</h3>
+      </div>
+      <button class="open-menu" id="abrir">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="header-menu" id="nav">
+        <nav class="menu-nav">
+          <button class="close-menu" id="cerrar">
+            <i class="bi bi-x"></i>
+          </button>
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./quienesSomos.html">Sobre Nosotros</a></li>
+            <li><a href="./contacto.html">Contactos</a></li>
+          </ul>
+        </nav>
+         <button id="dark-mode" class="btn-colormode">
+            <i class="bi bi-moon-stars-fill"></i>
+            <i class="bi bi-sun-fill"></i>
+         </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-contacto">
+
+    <section class="contacto-info">
+      <div class="contacto-titulo">
+        <h2>RECIBE ASESORÍA EN <strong>TODOS TUS
+            PROYECTOS GRÁFICOS.
+          </strong>
+        </h2>
+      </div>
+      <div class="contacto-texto">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio dolorum tempora. Facilis reiciendis officiis molestiae rem ab voluptates libero natus, doloribus perspiciatis nesciunt ea repellendus, alias vero officia expedita!</p> <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cum harum laborum rerum minus labore vitae ex debitis nemo odit voluptates sequi ea eligendi error totam officia, nam nesciunt earum.</p>
+      </div>
+    </section>
+
+    <section class="contacto-form">
+
+      <h4 class="contacto-title">¡ESCRÍBENOS!</h4>
+      
+      <form id="contacto-campos" class="contacto-campos" action="">
+
+        <label for="nombre">
+          <input type="text" name="nombre" id="nombre" placeholder="Déjanos tu nombre" required>
+        </label>
+
+        <label for="email">
+          <input type="email" name="email" id="email" placeholder="Déjanos tu email" required>
+        </label>
+
+        <label for="telefono">
+          <input type="number" name="number" id="number" placeholder="¿Nos dejas tu teléfono? Solo si quieres">
+        </label>
+
+        <select name="opciones" id="opciones" required class="opciones">
+          <option disabled selected value="">¿Qué te gustaría averiguar?</option>
+          <option value="">Costo de paquetes gráficos</option>
+          <option value="">Costo de páginas web</option>
+          <option value="">Costo de plan de medios digitales</option>
+          <option value="">Otros</option>
+        </select>
+
+        <textarea name="texto" id="texto" class="contacto-areatexto" placeholder="¿Quieres escribirnos algo adicional?">
+        </textarea>
+        <button type="submit" class="contacto-btn" id="contacto-btn">Enviar</button>
+      </form>
+
+    </section>
+  </main>
+
+  <footer class="footer-contacto">
+    <div class="footer-logo">
+      <h3>LA AGENCIA</h3>
+    </div>
+    <div class="footer-info">
+      <div class="footer-left">
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./quienesSomos.html">Sobre Nosotros</a></li>
+            <li><a href="./contacto.html">Contactos</a></li>
+          </ul>
+      </div>
+      <div class="footer-right">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter-x"></i>
+        <i class="bi bi-twitch"></i>
+        <i class="bi bi-github"></i>
+        <i class="bi bi-whatsapp"></i>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>César Delgado - Diseñador Gráfico© | Todos los derechos reservados. | 2024</p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
