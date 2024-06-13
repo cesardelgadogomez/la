@@ -1,0 +1,1077 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*********** INICIO ***********/
+
+.header {
+  max-width: 100%;
+  max-height: 105vh;
+  position: relative;  
+}
+
+video {
+  width: 100%;
+}
+
+.header-top {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem 1rem 4rem;
+}
+
+.header-logo h3 {
+  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-shadow: 1px 1px 2px black;
+  animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;
+}
+@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+
+.header-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  animation:tracking-in-contract .8s cubic-bezier(.215,.61,.355,1.000) both;
+}
+@keyframes tracking-in-contract{0%{letter-spacing:1em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}}
+
+.menu-nav ul {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-weight: 700;
+  gap: 2rem;
+}
+
+.menu-nav ul li {
+  cursor: pointer;
+  text-shadow: 1px 1px 3px black;
+}
+
+.menu-nav ul li a {
+  color: white;
+}
+
+.btn-colormode {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-colormode i {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  font-size: 1rem;
+}
+
+.btn-colormode .bi-sun-fill  {
+  display: none;
+}
+
+.open-menu,
+.close-menu {
+  display: none;
+}
+
+main {
+  width: 100%;
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+main h2 {
+  margin: 5rem 0 2rem 0;
+  font-size: 5rem;
+  font-weight: 100;
+  line-height: 5rem;
+  animation:text-focus-in 2s cubic-bezier(.55,.085,.68,.53) both
+}
+@keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+
+.photos {
+  width: 100%;
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.imagenes {
+  width: 80vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.imagen1 {
+  background-image: url("../img/graphic-design1.jpg");
+  border-radius: 0 3rem 3rem 0;
+  align-self: flex-start;
+}
+
+.imagenes h4 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 300;
+  text-shadow: 1px 1px 4px black;
+}
+
+.imagen2 {
+  background-image: url("../img/graphic-design2.jpg");
+  border-radius: 3rem 0 0 3rem;
+  align-self: flex-end;
+}
+
+.imagen3 {
+  background-image: url("../img/graphic-design3.jpg");
+  border-radius: 0 3rem 3rem 0;
+  align-self: flex-start;
+}
+
+.imagen4 {
+  background-image: url("../img/graphic-design4.jpg");
+  border-radius: 3rem 0 0 3rem;
+  align-self: flex-end;
+}
+
+.pilares {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  padding-block: 3rem;
+  background-color: rgb(231, 229, 229);
+}
+
+.pilares h2 {
+  animation:text-focus-in 2.5s cubic-bezier(.55,.085,.68,.53) both
+}
+
+.filosofias {
+  display: flex;
+  flex-direction: row;
+  padding-inline: 3rem;
+  gap: 2rem;
+}
+
+.filosofia {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 1rem;
+  padding-bottom: 2rem;
+  overflow: hidden;
+  transition: all 500ms;
+}
+
+.filosofia:hover {
+  transform: scale(1.1);
+}
+
+.filosofia img {
+  width: 100%;
+}
+
+.filosofia h4 {
+  font-size: 2rem;
+  font-weight: 800;
+  padding-inline: 1.5rem;
+}
+
+.filosofia p {
+  padding-inline: 1.5rem;
+  font-size: .8rem;
+}
+
+
+.filosofia-1 {
+  background-color: rgb(189, 188, 188);
+  border-radius: 2rem 0 0 2rem;
+}
+
+.filosofia-1:hover {
+  background-color: hsl(209, 93%, 49%);
+  color: white;
+}
+
+.filosofia-2 {
+  background-color: rgb(36, 36, 36);
+  color: white;
+}
+
+.filosofia-2:hover {
+  background-color: hsl(332, 93%, 48%);
+  color: white;
+}
+
+.filosofia-3 {
+  background-color: rgb(119, 118, 118);
+  border-radius: 0 2rem 2rem 0;
+}
+
+.filosofia-3:hover {
+  background-color: rgb(255, 251, 0);
+}
+
+.filosofia-1:hover,
+.filosofia-2:hover,
+.filosofia-3:hover {
+  border-radius: 2rem;
+}
+
+.clientes {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 5rem;
+  background-color: rgb(48, 47, 47);
+}
+
+.clientes-titulo h4 {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+}
+
+.clientes-titulo h4 {
+  font-weight: 100;
+  line-height: 4rem;
+}
+
+.clientes-logos {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  background-color: rgb(235, 234, 234);
+  gap: 2rem;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+}
+
+.clientes-logos img {
+  filter: grayscale(100%);
+  transition: all 500ms;
+}
+
+
+.cliente-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo1 img {
+  width: 4rem;
+}
+
+.logo2 img,
+.logo8 img,
+.logo9 img,
+.logo10 img,
+.logo11 img,
+.logo15 img,
+.logo16 img {
+  width: 8rem;
+}
+
+.logo3 img {
+  width: 13rem;
+}
+
+.logo4 img  {
+  width: 7rem;
+}
+
+.logo5 img,
+.logo6 img,
+.logo13 img,
+.logo14 img {
+  width: 10rem;
+}
+
+.logo7 img {
+  width: 5rem;
+}
+
+.logo12 img {
+  width: 6rem;
+}
+
+.clientes-logos img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.09);
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 1rem 0 3rem 0;
+}
+
+footer h3 {
+  font-size: 4rem;
+  font-weight: 800;
+  padding-bottom: 2rem;
+}
+
+.footer-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  font-size: 1rem;  
+} 
+
+.footer-nav ul li:hover {
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.footer-nav a {
+  color: rgb(26, 26, 26);
+}
+
+.footer-right {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-right i {
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.footer-right i:hover {
+  color: rgb(11, 88, 175);
+}
+
+.copyright {
+  padding-top: 2rem;
+}
+
+.copyright p {
+  font-size: .8rem;
+  color: rgb(43, 42, 42);
+}
+
+
+/************  QUIENES SOMOS  ************/
+
+.main-qs {
+  width: 100%;
+  padding-block: 2rem;
+  padding-top: 5rem; /* quitar en mobile */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.mainqs-tittle h2 {
+  width: auto;
+  margin: 3rem 0 2rem 0;
+  font-size: 5rem;
+  font-weight: 100;
+  line-height: 5rem;
+  animation:text-focus-in 2s cubic-bezier(.55,.085,.68,.53) both
+}
+@keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+
+.banner-qs {
+  width: 100%;
+  height: 50dvh;
+  margin-top: 2rem;
+  background-image: url(../img/banner-qs.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.members {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 2rem;
+  padding-bottom: 3rem;
+  margin-top: 3rem;
+  gap: 3rem;
+}
+
+.member {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem;
+  flex: 1;
+  gap: 1rem;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 10px rgb(155, 154, 154);
+  transition: all 500ms;
+}
+
+.member:hover {
+  background-color: rgb(231, 232, 233);
+}
+
+.member-photo {
+  width: 18rem;
+  height: 15rem;
+  display: flex;
+  border-radius: 50%;
+  padding-inline: 4rem;
+  transition: all 500ms;
+}
+
+.member-photo:hover {
+  background-color: rgb(255, 255, 255);
+  transform: scale(1.1);
+}
+
+.member-photo1 {
+  background-image: url(../img/member1.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgb(17, 147, 253);
+  width: 18rem;
+  height: 15rem;
+}
+
+.member-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 2rem;
+  gap: 1rem;
+}
+
+.member-info h4 {
+  font-size: 3rem;
+}
+
+.member-info h5 {
+  font-size: 1.5rem;
+}
+
+.member-info p {
+  color: rgb(46, 46, 46);
+}
+
+.member-sm {
+  display: flex;
+  gap: 1rem;
+}
+
+.member-sm i {
+  font-size: 1.5rem;
+  transition: all 500ms;
+}
+
+.member-sm i:hover {
+  color: rgb(17, 218, 253);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.member2 {
+  align-self: flex-end;
+}
+
+.member-photo2 {
+  background-image: url(../img/member2.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgb(153, 17, 243);
+  width: 18rem;
+  height: 15rem;
+}
+
+.member3 {
+  align-self: flex-start;
+}
+
+.member-photo3 {
+  background-image: url(../img/member3.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgb(247, 116, 116);
+  width: 18rem;
+  height: 15rem;
+}
+
+.member4 {
+  align-self: flex-end;
+}
+
+.member-photo4 {
+  background-image: url(../img/member4.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgb(71, 241, 37);
+  width: 18rem;
+  height: 15rem;
+}
+
+.member5 {
+  align-self: flex-start;
+}
+
+.member-photo5 {
+  background-image: url(../img/member5.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgb(104, 245, 179);
+  width: 18rem;
+  height: 15rem;
+}
+
+
+/************  CONTACTOS  ************/
+
+
+body {
+  padding-top: 0;
+}
+
+.main-contacto {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 0 3rem 3rem;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.contacto-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.contacto-info h2 {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+.contacto-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-inline: 3rem;
+  padding-block: 4rem;
+}
+
+.contacto-form h4 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.contacto-campos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.contacto-campos input {
+  width: 70%;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  border: 1px solid rgb(92, 91, 91);
+}
+
+.opciones {
+  width: 70%;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+}
+
+.contacto-areatexto {
+  height: 5rem;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+
+.contacto-btn {
+  width: 20%;
+  height: 2rem;
+  align-self: center;
+  border-radius: .5rem;
+  border: none;
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+}
+
+.footer-contacto {
+  box-shadow: 4px 4px 20px rgb(148, 148, 148);
+  padding-top: 3rem;
+}
+
+/************  MEDIA QUERIES  ************/
+
+@media screen and (max-width : 1150px) {
+  .filosofias {
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 3rem;
+    gap: 2rem;
+  }
+
+  .filosofia {
+    width: 60%;
+  }
+
+  .filosofia-1 {
+    border-radius: 2rem 2rem 0 0;
+  }
+
+  .filosofia-3 {
+    border-radius: 0 0 2rem 2rem;
+  }
+}
+
+@media screen and (max-width : 550px) {
+  .header {
+    max-height: auto;
+  }
+  
+  .open-menu,
+  .close-menu {
+    display: block;
+    border: 0;
+    font-size: 1.2rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .open-menu {
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.616);
+    border-radius: 50%;
+    padding: .3rem .5rem;
+  }
+
+  .open-menu i {
+    color: black;
+    font-weight: 700;
+    text-shadow: none;
+  }
+
+
+  .header-top {
+    padding: 3rem 0 0 1rem;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .header-logo {
+    display: flex;
+    align-items: center;
+    flex: .5;
+  }
+
+  .header-logo h3 {
+    font-size: 3rem;
+    line-height: 3rem;
+    padding-left: 1rem;
+    color: white;
+  }
+
+  .header-menu {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    align-items: end;
+    background-color: rgba(255, 255, 255, 0.856);
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.774); 
+  }
+
+  .menu-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+  }
+
+  .menu-nav ul {
+    flex-direction: column;
+    align-items: end;
+    color: rgb(37, 37, 37);
+  }
+
+  .menu-nav ul li {
+    text-shadow: none;
+  }
+
+  .menu-nav ul li a {
+    color: black;
+  }
+
+  .menu-visible {
+    opacity: 1;
+    visibility: visible;
+    animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94) both;
+    z-index: 1;
+  }
+
+  @keyframes slide-in-right{0%{transform:translateX(1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
+
+  .header-menu i {
+    color: rgb(26, 25, 25);
+    text-shadow: none;
+  }
+
+  main h2 {
+    margin: 1rem 0 2rem 0;
+    font-size: 2.5rem;
+    line-height: 3rem; 
+  }
+
+  .imagenes h4 {
+    font-size: 2.8rem;
+    line-height: 3rem;
+    padding-left: 2rem;
+  }
+  
+  .pilares h2 {
+    font-size: 2.3rem;
+  }
+  
+  .filosofias {
+    flex-direction: column;
+  }
+
+  .filosofia {
+    width: auto;
+  }
+
+  .filosofia h4 {
+    font-size: 1.8rem;
+  }
+  
+  .filosofia:hover {
+    transform: scale(1.06);
+  }
+
+  .clientes {
+    padding-block: 3rem;
+  }
+  
+  .clientes-titulo h4 {
+    font-size: 2.5rem;
+    padding-inline: 1rem;
+    line-height: 2.5rem;
+  }
+  
+  .clientes-logos {
+    padding-inline: 1rem;
+  }
+  
+  .main-qs {
+    padding-block: 4rem;
+  }
+  
+  .mainqs-title {
+    width: auto;
+    display: flex;
+    padding-inline: 1rem;
+  }
+
+  .mainqs-title h2 {
+    width: auto;
+    font-size: 2.3rem;
+    font-weight: 100;
+    line-height: 2.3rem;
+  }
+  
+  .banner-qs {
+    height: 70dvh;
+  }
+  
+  .member {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .member-photo {
+    width: 15rem;
+  }
+
+  .member-info {
+    width: 100%;
+    padding-inline: .2rem;
+    gap: 1rem;
+  }
+
+  .member-info h4 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  .member-info h5 {
+    font-size: 1.2rem;
+  }
+
+  .member-info p {
+    font-size: .8rem;
+  }
+
+  .member-sm {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .member-sm i {
+    font-size: 1.5rem;
+    transition: all 500ms;
+  }
+
+  .member-sm i:hover {
+    color: rgb(17, 218, 253);
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  
+  .main-contacto {
+    flex-direction: column;
+    padding: 2rem 1.5rem 1rem 1.5rem;
+  }
+
+  .contacto-info h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .contacto-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-inline: 3rem;
+    padding-block: 2.5rem;
+  }
+
+  .contacto-form h4 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .contacto-campos {
+    width: 100%;
+  }
+
+  .contacto-campos input {
+    width: 100%;
+  }
+
+  .opciones {
+    width: 100%;
+  }
+
+  .contacto-btn {
+    width: 50%;
+    height: 2.5rem;
+  }
+  
+  footer {
+    padding: 0 0 3rem 0;
+  }
+  
+  footer h3 {
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 1rem;
+  }
+  
+  .footer-info {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .footer-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding-bottom: 2rem;  
+  } 
+  
+  .footer-right {
+    flex-direction: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .footer-right i {
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 300ms;
+  }
+  
+  .footer-right i:hover {
+    color: rgb(11, 88, 175);
+  }
+  
+  .copyright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+  
+  .copyright p {
+    font-size: .6rem;
+    color: rgb(43, 42, 42);
+    text-align: center;
+  }
+}
+
+/********* DARK MODE *********/
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: rgb(41, 40, 40);
+}
+
+body.dark-mode h2 {
+  color: white;
+}
+
+body.dark-mode .btn-colormode .bi-moon-stars-fill  {
+  display: none;
+}
+
+body.dark-mode .btn-colormode .bi-sun-fill  {
+  display: block;
+  font-size: 1.3rem;
+}
+
+body.dark-mode .pilares {
+  background-color: rgb(20, 20, 20);
+}
+
+body.dark-mode .member {
+  background-color: rgb(156, 156, 156);
+  box-shadow: 3px 3px 10px rgb(14, 14, 14);
+}
+
+body.dark-mode .member p {
+  color: rgb(10, 10, 10);
+}
+
+body.dark-mode .member:hover {
+  background-color: rgb(202, 201, 201);
+}
+
+body.dark-mode .member-sm i:hover {
+  color: rgb(6, 46, 158);
+}
+
+body.dark-mode .contacto-texto {
+  color: rgb(197, 196, 196);
+}
+
+body.dark-mode .contacto-title {
+  color: white;
+}
+
+body.dark-mode .footer {
+  background-color: rgb(15, 15, 15);
+  color: white;
+}
+
+body.dark-mode .footer-contacto {
+  background-color: rgb(15, 15, 15);
+  color: white;
+  box-shadow: none;
+}
+
+body.dark-mode a {
+  color: white;
+}
+
+body.dark-mode .footer-right i:hover {
+  color: rgb(231, 179, 5);
+}
+
+body.dark-mode .copyright p {
+  color: rgb(109, 108, 108);
+}
